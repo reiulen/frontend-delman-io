@@ -3,7 +3,6 @@ import React from 'react'
 import { Button, Flex, FormControl, FormErrorMessage, FormLabel, Input, useToast } from '@chakra-ui/react'
 import { useForm, SubmitHandler } from "react-hook-form"
 import { MutationAddUser } from '@/services/useUsersQuery'
-import { AxiosError } from 'axios'
 
 type Inputs = {
   name: string
@@ -22,7 +21,7 @@ export default function UserRegistrationForm() {
 
   const { mutate: mutationAdd, isPending: isPendigMutation } =
     MutationAddUser({
-      onError: (error: AxiosError) => {
+      onError: (error: any) => {
         toast({
           title: "Error",
           description: error?.response?.data?.message,

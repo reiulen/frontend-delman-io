@@ -166,10 +166,10 @@ export default function DetailUser({
 
     const { mutate: mutationDelete, isPending: isPendigMutation } = MutationDeleteUser({
         id: detailDataUser?.id,
-        onError: (error: AxiosError) => {
+        onError: (error: any) => {
             toast({
                 title: 'Error',
-                description: error?.response?.data?.message || error?.message || 'Something went wrong',
+                description: error?.response?.data?.message ?? 'Something went wrong',
                 status: 'error',
                 duration: 9000,
                 isClosable: true,

@@ -71,8 +71,9 @@ export const MutationDeleteUser = ({ id, onError, onSuccess }: MutationDelete) =
   return resQuery;
 };
 
+
 type MutationAdd = {
-  onError: (error: AxiosError<{ errors: Error }>) => void;
+  onError: (error: any) => void;
   onSuccess: (data: { message: string }) => void;
 }
 
