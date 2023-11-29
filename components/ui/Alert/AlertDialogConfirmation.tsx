@@ -16,7 +16,7 @@ export default function AlertDialogConfirmation() {
     return (
         <AlertDialog
             isOpen={alertDialog.isOpen}
-            leastDestructiveRef={alertDialog.cancelRef}
+            leastDestructiveRef={alertDialog.cancelRef as any}
             onClose={alertDialog.onCancel}>
             <AlertDialogOverlay>
                 <AlertDialogContent>

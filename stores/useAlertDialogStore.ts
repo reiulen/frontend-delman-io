@@ -8,7 +8,7 @@ interface AlertDialog {
         message: string;
         textConfirm: string;
         textCancel: string;
-        cancelRef?: React.MutableRefObject<HTMLButtonElement | null> | null;
+        cancelRef?: React.MutableRefObject<HTMLButtonElement> | null;
         onConfirm: () => void;
         onCancel: () => void;
     };
