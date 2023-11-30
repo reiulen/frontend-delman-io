@@ -52,7 +52,7 @@ export default function Sidebar({ ...rest }) {
         }
       }}
       transition="width .1s ease-in-out"
-      py={{ md: 2 }}
+      py={2}
       zIndex={99}
       pos="fixed"
       top="14"
