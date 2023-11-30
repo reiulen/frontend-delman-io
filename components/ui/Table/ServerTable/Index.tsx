@@ -278,7 +278,7 @@ export default function ServerTable({
                                             cursor: 'col-resize',
                                             userSelect: 'none',
                                             touchAction: 'none',
-                                            zIndex: 999,
+                                            zIndex: 9,
                                             '&.is__resizing': {
                                                 bg: 'gray.200',
                                                 opacity: 1,
