@@ -67,7 +67,7 @@ export default function UserRegistrationForm() {
           errors?.name && <FormErrorMessage>{errors?.name?.message}</FormErrorMessage>
         }
       </FormControl>
-      <FormControl isInvalid={errors?.name ? true : false}>
+      <FormControl isInvalid={errors?.email ? true : false}>
         <FormLabel>Email</FormLabel>
         <Input
           {...register("email", {
