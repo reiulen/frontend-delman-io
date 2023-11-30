@@ -14,7 +14,7 @@ Frontend
 git clone  https://frontend-delman-io.vercel.app/search-user.git
 ```
 ```bash
-cd nukerduit-service
+cd frontend-delman-io
 ```
 
 ```bash
